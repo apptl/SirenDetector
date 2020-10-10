@@ -22,22 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageButton
-        android:id="@+id/settingsButton"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="664dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="16dp"
-        android:src="@android:drawable/ic_menu_manage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <ImageView
         android:id="@+id/logoView"
         android:layout_width="186dp"
@@ -58,37 +42,50 @@
         android:id="@+id/smsSwitch"
         android:layout_width="46dp"
         android:layout_height="27dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="140dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginStart="209dp"
-        android:layout_marginTop="560dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/smsText"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.166" />
 
     <Switch
         android:id="@+id/callSwitch"
-        android:layout_width="46dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginStart="219dp"
+        android:layout_width="52dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/smsSwitch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/callText" />
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toEndOf="@+id/callText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/titleText"
-        android:layout_width="221dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="95dp"
+        android:layout_width="269dp"
+        android:layout_height="39dp"
         android:layout_marginStart="95dp"
-        android:layout_marginTop="117dp"
-        android:text="Emergency Contacts"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="95dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/callText"
+        android:layout_width="47dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="301dp"
+        android:text="Call"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -96,35 +93,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/callText"
-        android:layout_width="40dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="301dp"
-        android:layout_marginStart="70dp"
-        android:text="Call"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/smsText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/smsText"
         android:layout_width="49dp"
         android:layout_height="32dp"
-        android:layout_marginBottom="140dp"
-        android:layout_marginEnd="292dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="560dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="140dp"
         android:text="SMS"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/callText"
+        app:layout_constraintVertical_bias="0.291" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"
