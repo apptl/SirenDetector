@@ -6,17 +6,138 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="611dp"
+        android:text="Done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="664dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_manage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="186dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="613dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Switch
+        android:id="@+id/smsSwitch"
+        android:layout_width="46dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="560dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/smsText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Switch
+        android:id="@+id/callSwitch"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="219dp"
+        app:layout_constraintBottom_toTopOf="@+id/smsSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/callText" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="95dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="117dp"
+        android:text="Emergency Contacts"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/callText"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginStart="70dp"
+        android:text="Call"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/smsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/smsText"
+        android:layout_width="49dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="560dp"
+        android:text="SMS"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="110dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="613dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
