@@ -14,7 +14,7 @@ def classifyMusic() :
     norms = []
     names = []
     
-    #reading all the files that meets the pattern "song-songname.wav"
+    #reading all the files that meets the pattern ".wav"
     files = [f for f in glob.glob( "*.wav", recursive=True)]
     for f in files:
         x, fs = sf.read(f)
